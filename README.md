@@ -10,7 +10,7 @@
 
 - Instalar los modules del package.json:
 ```bash
-npm run install
+npm install
 ```
 - Ejecutar el comando:
 ```bash
