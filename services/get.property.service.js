@@ -33,6 +33,7 @@ module.exports = getProperty = async (id) => {
             reject(error)
           } else {
             const body = JSON.parse(response.body)
+            console.log('getProperty: ', body.data);
             resolve(body.data.property)
           }
       })

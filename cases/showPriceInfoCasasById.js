@@ -30,5 +30,6 @@ module.exports = showPriceInfoCasasById = async (propertyId) => {
     return `price no found for id ${propertyId}`
   }
   const detailProperty = await getDetailProperty(property.title, propertyId)
+  console.log('detailProperty: ', detailProperty)
   return `${detailProperty.currency} ${detailProperty.price}`
 }
